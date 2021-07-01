@@ -21,58 +21,31 @@ running = True
 
 while running:
 
+    #============接收指令區塊============    
 
-    # Did the user click the window close button?
-
+    #等待使用者給予指令
     for event in pygame.event.get():
-
+        #當接收到畫布上的離開時，直接跳開while，結束程式
         if event.type == pygame.QUIT:
-
             running = False
-        
-        if event.type == pygame.KEYDOWN:
-            
-            if event.key == pygame.K_RIGHT:
-            
-                X = X + 2
-            
-            if event.key == pygame.K_LEFT:
-            
-                X = X - 2
-
-
-    # Fill the background with white
-
+    
+    #============畫布區塊============    
+ 
+    #畫布的顏色
     screen.fill((255, 255, 255))
 
 
-    # Draw a solid blue circle in the center
+    #畫圓形
+    pygame.draw.circle(screen, (0, 0, 255), (X, Y), 100)
 
-    
-    pygame.draw.circle(screen, (255, 0, 0), (350, Y), 5)
-    pygame.draw.circle(screen, (255, 0, 0), (150, Y), 5)
-
-
-    
-    surf = pygame.Surface((500, 1))
-    surf.fill((0,0,0))
+    #畫四方形
+    surf = pygame.Surface((100, 100)) #四方型的長寬
+    surf.fill((255, 255, 255)) #四方型的顏色
     rect = surf.get_rect()
-    screen.blit(surf, (0, Y))
-    
-    surf = pygame.Surface((1, 100))
-    surf.fill((0,0,0))
-    rect = surf.get_rect()
-    screen.blit(surf, (250, 200))
+    screen.blit(surf, (X, Y)) #四方形中心點的座標
 
+    #============畫布區塊============
 
-    pygame.draw.circle(screen, (0, 0, 255), (X, Y), 10)
-
-
-    # Flip the display
-
+    #將所有圖形顯示在畫布上
     pygame.display.flip()
-
-
-# Done! Time to quit.
-
 pygame.quit()
