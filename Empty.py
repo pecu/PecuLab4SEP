@@ -34,7 +34,7 @@ while running:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
                 surfX = surfX + 10
-                surfY = surfX + 10
+                surfY = surfY + 10
             
             if event.key == pygame.K_LEFT:
                 surfX = surfX - 10
