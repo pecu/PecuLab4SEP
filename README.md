@@ -9,3 +9,4 @@ PyGame
 
 - 鍵盤指令列表參考資料：https://www.itread01.com/content/1542763383.html
 - 基礎畫圖與文字產生參考資料：https://ithelp.ithome.com.tw/articles/10232170?sc=pt
+- 第一支 PyGame 程式教學投影片：https://docs.google.com/presentation/d/e/2PACX-1vSc3BLsuCWPCbs8sUBTqLevmpKjURa78ea8HH1WZE0d9O1f7Eh9p9rGUutqt-ooaKbyQyhk2OwNXjBN/pub?start=false&loop=false&delayms=3000
