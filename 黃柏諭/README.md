@@ -1,2 +1,3 @@
 # PecuLab4SEP
-PyGame
+這個遊戲是讓球移動
+並碰到球反彈
