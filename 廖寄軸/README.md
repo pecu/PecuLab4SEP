@@ -1,2 +1,0 @@
-# PecuLab4SEP
-PyGame
