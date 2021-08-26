@@ -37,6 +37,7 @@ pygame.quit()
 
 
 
+控制正方形的大小
 
 TufOfWar.py 拔河的遊戲
 
