@@ -4,11 +4,13 @@
 
 PyGame
 
-- TufOfWar.py 拔河遊戲
-- Empty.py 第一隻程式 (畫圓與鍵盤控制)
-- play.py 打方塊遊戲
-- drew.py 打方塊遊戲中自定義的套件 drew
-- twoPEOPLE.py 等待使用者給予鍵盤指令，控制座標位置，畫圓、畫線
+- [TufOfWar.py 拔河遊戲](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/TufOfWar.py)
+- [Empty.py 第一隻程式 (畫圓與鍵盤控制)](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/Empty.py)
+- [play.py 打方塊遊戲](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/play.py)
+- [drew.py 打方塊遊戲中自定義的套件 drew](https://github.com/pecu/PecuLab4SEP/blob/main/Pecu/drew.py)
+- [twoPEOPLE.py 等待使用者給予鍵盤指令，控制座標位置，畫圓、畫線](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/twoPEOPLE.py)
+
+參考資料
 
 - [鍵盤指令列表參考資料](https://www.itread01.com/content/1542763383.html)
 - [基礎畫圖與文字產生參考資料](https://ithelp.ithome.com.tw/articles/10232170?sc=pt)
