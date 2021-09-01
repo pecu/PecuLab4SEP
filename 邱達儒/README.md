@@ -1,2 +1,1 @@
-# PecuLab4SEP
-PyGame
+#邱達儒

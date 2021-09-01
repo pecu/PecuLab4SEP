@@ -1,2 +1,1 @@
-# PecuLab4SEP
-PyGame
+#廖胤捷
