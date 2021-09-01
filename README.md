@@ -17,6 +17,8 @@ PyGame
 - [第一支 PyGame 程式教學投影片](https://docs.google.com/presentation/d/e/2PACX-1vSc3BLsuCWPCbs8sUBTqLevmpKjURa78ea8HH1WZE0d9O1f7Eh9p9rGUutqt-ooaKbyQyhk2OwNXjBN/pub?start=false&loop=false&delayms=3000)
 - [Markdown 語法](https://markdown.tw/)
 
+指導老師：[蔡芸琤 (Pecu Tsai)](https://pecu.github.io/PecuLab4SEP/pecu/)
+
 參與人員
 
 - [林柏宇](https://pecu.github.io/PecuLab4SEP/林柏宇/)
