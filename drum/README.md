@@ -16,10 +16,10 @@
 [順天戰鼓教學頻道](https://www.youtube.com/channel/UCS7KbYHQj6qi1EVAIlgRKZw/featured)
 
 ![順天戰鼓封面照](/img/cover.jpg)
-![順天戰鼓照](/img/1.jpg)
-![順天戰鼓照](/img/2.jpg)
-![順天戰鼓照](/img/3.jpg)
-![順天戰鼓照](/img/4.jpg)
-![順天戰鼓照](/img/5.jpg)
+![順天戰鼓封面照](/img/photoone.jpg)
+![順天戰鼓封面照](/img/phototwo.jpg)
+![順天戰鼓封面照](/img/photothree.jpg)
+![順天戰鼓封面照](/img/photofour.jpg)
+![順天戰鼓封面照](/img/photofive.jpg)
 
 
