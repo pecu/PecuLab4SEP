@@ -17,14 +17,14 @@
 
 ![順天戰鼓封面照](/img/cover.jpg)
 
-![順天戰鼓封面照](/img/cover.jpg)
+![順天戰鼓封面照](/img/p1.jpg)
 
-![順天戰鼓封面照](/img/cover.jpg)
+![順天戰鼓封面照](/img/p2.jpg)
 
-![順天戰鼓封面照](/img/cover.jpg)
+![順天戰鼓封面照](/img/p3.jpg)
 
-![順天戰鼓封面照](/img/cover.jpg)
+![順天戰鼓封面照](/img/p4.jpg)
 
-![順天戰鼓封面照](/img/cover.jpg)
+![順天戰鼓封面照](/img/p5.jpg)
 
 
