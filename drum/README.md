@@ -12,7 +12,5 @@
 
 - [涂家瑄](https://pecu.github.io/PecuLab4SEP/%E6%B6%82%E5%AE%B6%E7%91%84/)
 - [廖寄軸](https://pecu.github.io/PecuLab4SEP/%E5%BB%96%E5%AF%84%E8%BB%B8/)
-- [潘諺棋](https://github.com/pecu/PecuLab4SEP/tree/main/%E6%BD%98%E8%AB%BA%E6%A3%8B)
-
 
 [順天戰鼓教學頻道](https://www.youtube.com/channel/UCS7KbYHQj6qi1EVAIlgRKZw/featured)
