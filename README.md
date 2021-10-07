@@ -25,12 +25,6 @@ PyGame
 
 參與人員
 
-- [林柏宇](https://pecu.github.io/PecuLab4SEP/林柏宇/)
 - [邱達儒](https://pecu.github.io/PecuLab4SEP/邱達儒/)
 - [涂家瑄](https://pecu.github.io/PecuLab4SEP/涂家瑄/)
-- [黃柏諭](https://pecu.github.io/PecuLab4SEP/黃柏諭/)
-- [廖胤捷](https://pecu.github.io/PecuLab4SEP/廖胤捷/)
 - [廖寄軸](https://pecu.github.io/PecuLab4SEP/廖寄軸/)
-- [潘諺棋](https://pecu.github.io/PecuLab4SEP/潘諺棋/)
-
-
