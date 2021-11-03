@@ -17,8 +17,10 @@ screen = pygame.display.set_mode([500, 500])
 
 w = 250 #y
 s = 250
-Colorone = 400 
-Colortwo = 400 
+x = 250
+y = 250
+ColorR = 0 #0~255
+ColorG = 0 #0~255
 surfX = 20
 surfY = 20
 circle_size = 15
@@ -48,17 +50,21 @@ while running:
             if event.key == pygame.K_d:#右鍵改變
                     s = s + 10 
             if event.key == pygame.K_UP:#上鍵改變
-                    Colorone = Colorone - 10
+                    ColorR = ColorR - 50
+                    ColorG = ColorG - 50
             if event.key == pygame.K_DOWN:#下鍵改變
-                    Colorone = Colorone + 10 
+                    ColorR = ColorR + 50
+                    ColorG = ColorG + 50
             if event.key == pygame.K_RIGHT: #右箭頭
-                    Colortwo = Colortwo + 10
-            if event.key == pygame.K_EFT: #左箭頭
-                    Colortwo = Colortwo - 10
+                    x = x + 10
+            if event.key == pygame.K_LEFT: #左箭頭
+                    x = x - 10
             if event.key == pygame.K_v:
                     circle_size = circle_size - 10
+                    y = y - 10
             if event.key == pygame.K_c:
                     circle_size = circle_size + 10
+                    y = y + 10
     #============畫布區塊============    
 
     #畫布的顏色
@@ -75,8 +81,28 @@ while running:
         w = 500
     if s >= 500:
         s = 500
-    pygame.draw.circle(screen,(Colorone, Colortwo, 255), (s, w), circle_size)
-           
+    
+    if x >= 500:
+        x = 500
+    if y >=500:
+        y = 500
+    
+    if x <= 0 :
+        x = 0
+    if y <= 0:
+        y = 0
+        
+    if ColorR <= 0:
+        ColorR = 0
+    if ColorR >= 255:
+        ColorR = 255
+    if ColorG <= 0:
+        ColorG = 0
+    if ColorG >= 255:
+        ColorG = 255
+    # pygame.draw.circle(畫布, 顏色, (x坐標, y坐標), 半徑, 線寬)
+    pygame.draw.circle(screen, (ColorR, 0, 255), (s, w), circle_size, 1)
+    pygame.draw.circle(screen, (0, 255, ColorG), (x, y), circle_size + 10)           
     #============畫布區塊============
 
     #將所有圖形顯示在畫布上
