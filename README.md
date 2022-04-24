@@ -31,4 +31,4 @@ PyGame 參與人員
 - [涂家瑄](https://pecu.github.io/PecuLab4SEP/PyGame/涂家瑄/)
 - [廖寄軸](https://pecu.github.io/PecuLab4SEP/PyGame/廖寄軸/)
 
-指導老師：[蔡芸琤 (Pecu Tsai)](https://pecu.github.io/PecuLab4SEP/PyGame/Pecu/)
+指導老師：[蔡芸琤 (Pecu Tsai)](https://pecu.github.io/peculab/)
