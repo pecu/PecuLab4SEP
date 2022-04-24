@@ -7,6 +7,7 @@ import { ethers } from "ethers";
 // using them with ethers
 import TokenArtifact from "../contracts/PecuCoin.json";
 import NFTArtifact from "../contracts/PecuLab.json";
+import PecuLabVisit from "../contracts/PecuLabVisit.json";
 import contractAddress from "../contracts/contract-address.json";
 
 // All the logic of this dapp is contained in the Dapp component.
@@ -20,6 +21,7 @@ import { TransactionErrorMessage } from "./TransactionErrorMessage";
 import { WaitingForTransactionMessage } from "./WaitingForTransactionMessage";
 import { NoTokensMessage } from "./NoTokensMessage";
 import { MintNFT } from "./MintNFT";
+import { MintVisit} from "./MintVisit";
 
 // This is the Hardhat Network id, you might change it in the hardhat.config.js.
 // If you are using MetaMask, be sure to change the Network id to 1337.
@@ -166,6 +168,14 @@ export class Dapp extends React.Component {
                 }
               />
             }
+
+            {
+              <MintVisit
+                mintVisit={(to, tokenURI) =>
+                  this._minVisit(to, tokenURI)
+                }
+              />
+            }
           </div>
         </div>
       </div>
@@ -249,6 +259,12 @@ export class Dapp extends React.Component {
     this._nft = new ethers.Contract(
       contractAddress.PecuLab,
       NFTArtifact.abi,
+      this._provider.getSigner(0)
+    );
+
+    this._visit = new ethers.Contract(
+      contractAddress.PecuLabVisit,
+      PecuLabVisit.abi,
       this._provider.getSigner(0)
     );
   }
@@ -371,7 +387,7 @@ export class Dapp extends React.Component {
       // We use .wait() to wait for the transaction to be mined. This method
       // returns the transaction's receipt.
       const receipt = await tx.wait();
-      const nowid = (parseInt(receipt.logs[0].topics[3])); // This is the tokenID
+
       // The receipt, contains a status flag, which is 0 to indicate an error.
       if (receipt.status === 0) {
         // We can't know the exact error that made the transaction fail when it
@@ -396,6 +412,35 @@ export class Dapp extends React.Component {
     }
   }
 
+  async _minVisit(to, tokenURI){
+    try {      
+      this._dismissTransactionError();
+      const tx = await this._visit.mint(to, tokenURI);     
+      const receipt = await tx.wait();
+      // The receipt, contains a status flag, which is 0 to indicate an error.
+      if (receipt.status === 0) {
+        // We can't know the exact error that made the transaction fail when it
+        // was mined, so we throw this generic one.
+        throw new Error("Mint Visit failed");
+      }
+    } catch (error) {
+      // We check the error code to see if this error was produced because the
+      // user rejected a tx. If that's the case, we do nothing.
+      if (error.code === ERROR_CODE_TX_REJECTED_BY_USER) {
+        return;
+      }
+
+      // Other errors are logged and stored in the Dapp's state. This is used to
+      // show them to the user, and for debugging.
+      console.error(error);
+      this.setState({ transactionError: error });
+    } finally {
+      // If we leave the try/catch, we aren't sending a tx anymore, so we clear
+      // this part of the state.
+      this.setState({ txBeingSent: undefined });
+    }
+  }
+  
   // This method just clears part of the state.
   _dismissTransactionError() {
     this.setState({ transactionError: undefined });

@@ -1,30 +1,34 @@
 # PecuLab4SEP
 
-愛因斯坦 Albert Einstein 說：什麼叫瘋子，就是重複做同樣的事情還期待會出現不同的結果。
+PecuLab4SEP: PecuLab serves Sustainable Education and wishes to establish a Platform for every peculiar.
 
-Insanity: doing the same thing over and over again and expecting different results.
+WEB3 (bi-weekly Thursday 7:00 ~ 8:30 pm)
 
-- [順天戰鼓](https://pecu.github.io/PecuLab4SEP/drum)
+- [Google Meet 連結](https://meet.google.com/snb-rqjr-kkh)
+- [所有課程錄影連結](https://youtube.com/playlist?list=PLH3VeiMX0ckiCqHLpLIBOMXQRtF_Vs3Eo)
+- [2022/03/31 HardHat 新手上路，第一堂課共編](https://hackmd.io/_cQDlxDERrKlIp1OPg3CTA)
+- [2022/04/14、28 發行 NFT，第二堂課 & 第三堂課共編](https://hackmd.io/DaDSR3bvRNaPZiU12P5ctQ)
+- [MyDapp 範例專案](https://pecu.github.io/PecuLab4SEP/MyDapp)
 
 PyGame
 
-- [TufOfWar.py 拔河遊戲](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/TufOfWar.py)
-- [Empty.py 第一隻程式 (畫圓與鍵盤控制)](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/Empty.py)
-- [play.py 打方塊遊戲](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/play.py)
-- [drew.py 打方塊遊戲中自定義的套件 drew](https://github.com/pecu/PecuLab4SEP/blob/main/Pecu/drew.py)
-- [twoPEOPLE.py 等待使用者給予鍵盤指令，控制座標位置，畫圓、畫線](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/Pecu/twoPEOPLE.py)
+- [TufOfWar.py 拔河遊戲](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/PyGame/Pecu/TufOfWar.py)
+- [Empty.py 第一隻程式 (畫圓與鍵盤控制)](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/PyGame/Pecu/Empty.py)
+- [play.py 打方塊遊戲](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/PyGame/Pecu/play.py)
+- [drew.py 打方塊遊戲中自定義的套件 drew](https://github.com/pecu/PecuLab4SEP/blob/main/PyGame/Pecu/drew.py)
+- [twoPEOPLE.py 等待使用者給予鍵盤指令，控制座標位置，畫圓、畫線](https://raw.githubusercontent.com/pecu/PecuLab4SEP/main/PyGame/Pecu/twoPEOPLE.py)
 
-參考資料
+PyGame 參考資料
 
 - [鍵盤指令列表參考資料](https://www.itread01.com/content/1542763383.html)
 - [基礎畫圖與文字產生參考資料](https://ithelp.ithome.com.tw/articles/10232170?sc=pt)
 - [第一支 PyGame 程式教學投影片](https://docs.google.com/presentation/d/e/2PACX-1vSc3BLsuCWPCbs8sUBTqLevmpKjURa78ea8HH1WZE0d9O1f7Eh9p9rGUutqt-ooaKbyQyhk2OwNXjBN/pub?start=false&loop=false&delayms=3000)
 - [Markdown 語法](https://markdown.tw/)
 
-指導老師：[蔡芸琤 (Pecu Tsai)](https://pecu.github.io/PecuLab4SEP/Pecu/)、[楊雅汝](https://github.com/yaru1106)
+PyGame 參與人員
 
-參與人員
+- [邱達儒](https://pecu.github.io/PecuLab4SEP/PyGame/邱達儒/)
+- [涂家瑄](https://pecu.github.io/PecuLab4SEP/PyGame/涂家瑄/)
+- [廖寄軸](https://pecu.github.io/PecuLab4SEP/PyGame/廖寄軸/)
 
-- [邱達儒](https://pecu.github.io/PecuLab4SEP/邱達儒/)
-- [涂家瑄](https://pecu.github.io/PecuLab4SEP/涂家瑄/)
-- [廖寄軸](https://pecu.github.io/PecuLab4SEP/廖寄軸/)
+指導老師：[蔡芸琤 (Pecu Tsai)](https://pecu.github.io/PecuLab4SEP/PyGame/Pecu/)
