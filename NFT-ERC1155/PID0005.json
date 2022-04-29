@@ -1,0 +1,26 @@
+{
+	"image":"ipfs://QmUdTk6PJi7x3vtcQtVGTvHsfULWjCuxFNTfKcnW6ksMaf?filename=PID0005.jpg",
+	"attributes":
+	[
+		{
+			"trait_type":"Task",
+			"value":"PecuLab Helper"
+		},
+		{
+			"trait_type":"Goal",
+			"value":"Coorganizer of Colearning, Coworking and Cocreating"
+		},
+		{
+			"trait_type":"Background",
+			"value":"Reykjavík Drekinn Grill Söluturn"
+		},
+		{
+			"trait_type":"Country",
+			"value":"The Republic of Iceland"
+		},
+		{
+			"trait_type":"Source",
+			"value":"PecuLab"
+		}
+	]
+}

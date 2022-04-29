@@ -1,0 +1,26 @@
+{
+	"image":"ipfs://QmPhPWVqtj2xErKyZzTy1Nq4koLZJbM76pQcQ7K6caiNsV?filename=PID0003.jpg",
+	"attributes":
+	[
+		{
+			"trait_type":"Task",
+			"value":"PecuLab Co-Learner"
+		},
+		{
+			"trait_type":"Goal",
+			"value":"Colearning, Coworking and Cocreating"
+		},
+		{
+			"trait_type":"Background",
+			"value":"Maastricht Selexyz Dominicanen Bookstore"
+		},
+		{
+			"trait_type":"Country",
+			"value":"Nederland"
+		},
+		{
+			"trait_type":"Source",
+			"value":"PecuLab"
+		}
+	]
+}
