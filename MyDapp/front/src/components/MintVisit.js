@@ -23,8 +23,7 @@ export function MintVisit({ mintVisit }) {
           <label>Visit NFT Mint address</label>
           <input className="form-control" type="text" name="to" required />
           <label>Visit NFT Mint URI</label>
-          <input className="form-control" type="text" name="tokenURI"
-          value="https://ipfs.io/ipfs/QmR1ikAX3GKo1Gqnw1XqKR896RycHVEfz7WkrGdaKq7B8g?filename=PID0004.json" required />
+          <input className="form-control" type="text" name="tokenURI" required />
         </div>
         <div className="form-group">
           <input className="btn btn-primary" type="submit" value="MintVisit" />
