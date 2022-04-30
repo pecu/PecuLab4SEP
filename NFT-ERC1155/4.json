@@ -1,0 +1,26 @@
+{
+	"image":"ipfs://QmXbpEAqmmCi9mhjkdVEHMbBP8RKw5HRFDuE5C5m8KcvVT?filename=PID0004.jpg",
+	"attributes":
+	[
+		{
+			"trait_type":"Task",
+			"value":"PecuLab Visitor"
+		},
+		{
+			"trait_type":"Goal",
+			"value":"Will be Colearning, Coworking and Cocreating"
+		},
+		{
+			"trait_type":"Background",
+			"value":"Sydney Queen Victoria Building"
+		},
+		{
+			"trait_type":"Country",
+			"value":"Australia"
+		},
+		{
+			"trait_type":"Source",
+			"value":"PecuLab"
+		}
+	]
+}

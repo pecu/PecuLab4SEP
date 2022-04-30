@@ -1,0 +1,26 @@
+{
+	"image":"ipfs://Qmc6iw1rXgEuhFozTU7xG3QDMcxu4S9Jq7e2X1bzEMYvuU?filename=PID0000.jpg",
+	"attributes":
+	[
+		{
+			"trait_type":"Task",
+			"value":"TBD"
+		},
+		{
+			"trait_type":"Goal",
+			"value":"TBD"
+		},
+		{
+			"trait_type":"Background",
+			"value":"TBD"
+		},
+		{
+			"trait_type":"Country",
+			"value":"TBD"
+		},
+		{
+			"trait_type":"Source",
+			"value":"PecuLab"
+		}
+	]
+}
