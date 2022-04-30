@@ -195,17 +195,10 @@ export class Dapp extends React.Component {
       console.log(opened);
       if(opened == 1) {
         console.log(id);
-        const setBlindBoxOpened = await this._blind.setBlindBoxOpened(id);
+        const setBlindBoxOpened = await this._blind.flipReveal();
         const setBlindBoxOpened_receipt = await setBlindBoxOpened.wait();
         if (setBlindBoxOpened_receipt.status === 0) {
           throw new Error("setBlindBoxOpened failed");
-        }
-      }
-      else {
-        const setBlindBoxClosed = await this._blind.setBlindBoxClosed(id);
-        const setBlindBoxClosed_receipt = await setBlindBoxClosed.wait();
-        if (setBlindBoxClosed_receipt.status === 0) {
-          throw new Error("setBlindBoxClosed failed");
         }
       }
     } catch (error) {

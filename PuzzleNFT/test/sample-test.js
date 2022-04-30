@@ -7,11 +7,10 @@ describe("PuzzleNFT", function () {
     const puzzle = await PuzzleNFT.deploy();
     await puzzle.deployed();
 
-    const setBlindBoxOpened1 = await puzzle.setBlindBoxOpened(5);
-    const mint = await puzzle.mint("0xAbaA9D9c354163781718694260C7eD87538aA127", 5);
-    const setBlindBoxClosed1 = await puzzle.setBlindBoxClosed(5);
-    const setBlindBoxOpened2 = await puzzle.setBlindBoxOpened(5);
-    const setBlindBoxClosed2 = await puzzle.setBlindBoxClosed(5);
-
+    await puzzle.tokenURI(5);
+    await puzzle.flipReveal();
+    await puzzle.tokenURI(5);
+    const geturi = await puzzle.uri(5);
+    console.log(geturi);
   });
 });
