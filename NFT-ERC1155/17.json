@@ -1,22 +1,22 @@
 {
-	"image":"ipfs://Qmc6iw1rXgEuhFozTU7xG3QDMcxu4S9Jq7e2X1bzEMYvuU?filename=PID0000.jpg",
+	"image":"ipfs://QmPrMzz7iB7M6ipojVUZLfuUHDF51iQDngXnAdUotvQk3J?filename=PID0002.jpg",
 	"attributes":
 	[
 		{
 			"trait_type":"Task",
-			"value":"TBD"
+			"value":"Full Stack Web3 Development"
 		},
 		{
 			"trait_type":"Goal",
-			"value":"TBD"
+			"value":"Landing Page"
 		},
 		{
 			"trait_type":"Background",
-			"value":"TBD"
+			"value":"Bonn Schloss Drachenburg"
 		},
 		{
 			"trait_type":"Country",
-			"value":"TBD"
+			"value":"Germany"
 		},
 		{
 			"trait_type":"Source",

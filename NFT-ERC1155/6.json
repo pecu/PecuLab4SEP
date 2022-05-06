@@ -1,0 +1,26 @@
+{
+	"image":"ipfs://QmUBS1MhJRYg93AcSB2ED39fPLa8GXyNDwnQFvfP96vai3?filename=PID0001.jpg",
+	"attributes":
+	[
+		{
+			"trait_type":"Task",
+			"value":"Discord"
+		},
+		{
+			"trait_type":"Goal",
+			"value":"DAO Community"
+		},
+		{
+			"trait_type":"Background",
+			"value":"Český Krumlov"
+		},
+		{
+			"trait_type":"Country",
+			"value":"Česká Republika"
+		},
+		{
+			"trait_type":"Source",
+			"value":"PecuLab"
+		}
+	]
+}
