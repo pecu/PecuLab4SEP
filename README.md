@@ -9,7 +9,7 @@ WEB3 (bi-weekly Thursday 7:00 ~ 8:30 pm)
 - [2022/03/31 HardHat 新手上路，第一堂課共編](https://hackmd.io/_cQDlxDERrKlIp1OPg3CTA)
 - [2022/04/14、28 發行 NFT，第二堂課 & 第三堂課共編](https://hackmd.io/DaDSR3bvRNaPZiU12P5ctQ)
 - [MyDapp 範例專案](https://pecu.github.io/PecuLab4SEP/MyDapp)
-- [2022/05/12 ERC1155 盲盒 NFT 製作，第四堂課共編](https://hackmd.io/@d6EYMM_FR3-abUh5X5Ax5Q/BygXL6Yrq)
+- [2022/05/12、26 盲盒 NFT 製作、合約驗證、合約身分控制，第四堂課共編 & 第五堂課共編](https://hackmd.io/@d6EYMM_FR3-abUh5X5Ax5Q/BygXL6Yrq)
 - [PuzzleNFT 範例專案](https://pecu.github.io/PecuLab4SEP/PuzzleNFT)
 
 WEB3 Helper
