@@ -11,6 +11,7 @@ WEB3 (bi-weekly Thursday 7:00 ~ 8:30 pm)
 - [MyDapp 範例專案](https://pecu.github.io/PecuLab4SEP/MyDapp)
 - [2022/05/12、26 盲盒 NFT 製作、合約驗證、合約身分控制，第四堂課共編 & 第五堂課共編](https://hackmd.io/@d6EYMM_FR3-abUh5X5Ax5Q/BygXL6Yrq)
 - [2022/06/09 Discord運作機制及機器人程式開發，第六堂課共編](https://hackmd.io/@d6EYMM_FR3-abUh5X5Ax5Q/H1rkqaadc)
+- [2022/06/23 ~ 2022/09/08 共學規劃討論](https://hackmd.io/viidxKMuRH2Ll9psMW8oRw)
 - [PuzzleNFT 範例專案](https://pecu.github.io/PecuLab4SEP/PuzzleNFT)
 - [payable 代幣銷售頁面](https://github.com/pecu/PecuLab4SEP/tree/main/payable)
 
