@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <script src="./node_modules/blockly/blockly_compressed.js"></script>
+    <script src="./node_modules/blockly/blocks_compressed.js"></script>
+    <script src="./node_modules/blockly/javascript_compressed.js"></script>
+    <script src="./node_modules/blockly/msg/en.js"></script>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="https://unpkg.com/multiformats/dist/index.min.js"></script>
+    <style>
+      body {
+        background-color: #fff;
+        font-family: sans-serif;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 140%;
+      }
+    </style>
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <p>
+      <!--<button onclick="showCode()">Show JavaScript</button>-->
+      <button onclick="runCode()">Run JavaScript</button>
+      <button onclick="writeCode()">Wrtie to NFT</button>
+    </p>
+
+    <div id="blocklyDiv" style="height: 500px; width: 1000px;"></div>
+
+    <script>
+      var toolbox = {
+          "kind":"categoryToolbox",
+          "contents":[
+            {
+              "kind":"category",
+              "name":"Logic",
+              "categorystyle":"logic_category",
+              "contents":[
+                {
+                  "kind":"block",
+                  "type":"controls_if"
+                },
+                {
+                  "kind":"block",
+                  "type":"logic_compare"
+                },
+                {
+                  "kind":"block",
+                  "type":"logic_operation"
+                },
+                {
+                  "kind":"block",
+                  "type":"logic_negate"
+                },
+                {
+                  "kind":"block",
+                  "type":"logic_boolean"
+                }
+              ]
+            },
+            {
+              "kind":"category",
+              "name":"Loops",
+              "categorystyle":"loop_category",
+              "contents":[
+                {
+                  "kind":"block",
+                  "type":"controls_repeat_ext",
+                  "inputs":{
+                    "TIMES":{
+                      "block":{
+                        "type":"math_number",
+                        "fields":{
+                          "NUM":10
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind":"block",
+                  "type":"controls_whileUntil"
+                }
+              ]
+            },
+            {
+              "kind":"category",
+              "name":"Math",
+              "categorystyle":"math_category",
+              "contents":[
+                {
+                  "kind":"block",
+                  "type":"math_number",
+                  "fields":{
+                    "NUM":123
+                  }
+                },
+                {
+                  "kind":"block",
+                  "type":"math_arithmetic"
+                },
+                {
+                  "kind":"block",
+                  "type":"math_single"
+                }
+              ]
+            },
+            {
+              "kind":"category",
+              "name":"Text",
+              "categorystyle":"text_category",
+              "contents":[
+                {
+                  "kind":"block",
+                  "type":"text"
+                },
+                {
+                  "kind":"block",
+                  "type":"text_length"
+                },
+                {
+                  "kind":"block",
+                  "type":"text_print"
+                }
+              ]
+            },
+        {
+              "kind":"category",
+              "name":"Web3",
+              "categorystyle":"text_category",
+              "contents":[
+                {
+                  "kind":"block",
+                  "type":"export_to_chain"
+                }
+              ]
+            },	  
+          ]
+        }
+  
+  
+      var demoWorkspace = Blockly.inject('blocklyDiv',
+          {media: './node_modules/blockly/media/',
+           toolbox: toolbox});
+  
+      var startBlocks = {
+          "blocks":{
+            "languageVersion":0,
+            "blocks":[              
+              {
+                "type":"export_to_chain",
+                "inline":false,
+                "inputs":{
+                  "entryString":{
+                  "block":{
+                    "type":"text",
+                    "fields":{
+                    "TEXT":"Text to NFT"
+                    }
+                  }
+                  }
+                }			  
+              }
+            ]
+          }
+        }
+      
+      
+    Blockly.Blocks['export_to_chain'] = {
+      init: function() {
+      this.appendDummyInput()
+        .appendField("Connect Wallet");
+      this.appendValueInput("entryString")
+        .setCheck(null)
+        .appendField("Entry String");
+      this.setColour(230);
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setTooltip("");
+      this.setHelpUrl("");
+     }
+  };
+  
+  
+    Blockly.JavaScript['export_to_chain'] = function(block) {
+      var value_entrystring = Blockly.JavaScript.valueToCode(block, 'entryString', Blockly.JavaScript.ORDER_ATOMIC);
+      // TODO: Assemble JavaScript into code variable.
+            
+      var code = "document.getElementById('BTN_toWeb3').click();\n" +
+                 "document.cookie = 'myCookie="+ value_entrystring.replace("'","") +";";
+      return code;
+    };
+  
+  
+    function export_string_to_chain(entry_string)
+    {
+      alert(entry_string);	
+    }
+    
+      Blockly.serialization.workspaces.load(startBlocks, demoWorkspace);
+    
+  
+      function showCode() {
+        // Generate JavaScript code and display it.
+        Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+        var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
+        alert(code);
+      }
+
+      function writeCode() {
+        document.getElementById('Write_toWeb3').click();
+      }
+  
+      function runCode() {
+        // Generate JavaScript code and run it.
+        window.LoopTrap = 1000;
+        Blockly.JavaScript.INFINITE_LOOP_TRAP =
+            'if (--window.LoopTrap < 0) throw "Infinite loop.";\n';
+        var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
+        Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+        try {
+          eval(code);
+        } catch (e) {
+          alert(e);
+        }
+      }
+    </script>
+
+  </body>
+</html>
